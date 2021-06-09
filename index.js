@@ -20,7 +20,7 @@ console.log(num1)
 
 //broken down example:
 
-let num1 = 2 * 5;
+num1 = 2 * 5;
 console.log(num1);
 num1 = num1 / 3;
 console.log(num1);
