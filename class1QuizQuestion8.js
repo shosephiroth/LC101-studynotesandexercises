@@ -1,6 +1,6 @@
 // So I'm not sure how this solution is coming about
 
-2 ** 2 ** 3 * 3
+// 2 ** 2 ** 3 * 3
 
 // answer is 768, but how?
 
