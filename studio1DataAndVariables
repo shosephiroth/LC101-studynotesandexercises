@@ -2,11 +2,13 @@
 
 
 // Declare and initialize the 12 variables here:
-let date = "Monday 2019-03-18"
-;
-let time = "10:05:34 AM"
-;
-let astronautCount = 7;
+let date = "Monday 2019-03-18";
+let time = "10:05:34 AM";
+
+//Bonus mission right hurr:
+const input = require('readline-sync');
+let astronautCount = input.question("How many astronauts on this trip? ");
+
 let astronautStatus = "ready";
 let averageAstronautMassKg = 80.7;
 let crewMassKg = astronautCount * averageAstronautMassKg
@@ -19,12 +21,53 @@ let fuelTempCelsius = -225;
 let fuelLevel = "100%";
 let weatherStatus = "clear"
 
-let line = "---" * 5
+// copied the exact dash/line length from the instructions page
 
+let line = "-------------------------------------" 
 
 
 // Write code to generate the LC04 report here:
 
+console.log(line);
+console.log(">LC04 - LANUCHLIST");
+console.log(line);
+console.log("Date: " + date);
+console.log("Time: " + time);
+console.log()
+
+console.log(line);
+console.log(">ASTRONAUT INFO");
+console.log(line);
+console.log("* Count: 7");
+console.log("* Status: ready");
+console.log();
+
+console.log(line);
+console.log(">FUEL DATA");
+console.log(line);
+console.log("* Fuel temp celsius: " + fuelTempCelsius + " C");
+console.log("* Fuel level: " + fuelLevel);
+console.log();
+
+console.log(line);
+console.log(">MASS DATA");
+console.log(line);
+console.log("* Crew mass: " + crewMassKg + " kg");
+console.log("* Fuel mass: " + fuelMassKg + " kg");
+console.log("* Shuttle mass " + shuttleMassKg + " kg");
+console.log("* Total mass: " + totalMassKg);
+console.log();
+
+console.log(line);
+console.log(">FLIGHT PLAN");
+console.log(line);
+console.log("* Weather: " + weatherStatus);
+console.log()
+
+console.log(line);
+console.log(">OVERALL STATUS")
+console.log(line);
+console.log("* Clear for takeoff: YES");
 
 
 
