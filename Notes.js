@@ -57,5 +57,16 @@ console.log(! false);
 // "!"" operator has same role as "NOT" in english
 console.log( !(5 > 7) );
 console.log( !('dog' === 'cat') );
+console.log();
+//
 
-
+console.log("5.3.2 Operator Precedence");
+// In order from highest to lowest
+console.log("!"); //Logical NOT
+console.log("**"); // Exponentiation
+console.log("*,/,%"); // Mutliplication and divison
+console.log("+,-"); // Addition and subtraction
+console.log("<=,>=,>,<"); //Comparison
+console.log("===,!==,==,!="); // Equality
+console.log("&&"); // Logical AND
+console.log("||"); // Logical OR
