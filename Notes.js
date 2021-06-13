@@ -174,5 +174,6 @@ if (a % 2 === 1) {
 } else if (a > 5) {
    console.log("Code");
 } else {
-   console.log("K=LaunchCode");
+   console.log("LaunchCode");
 }
+
