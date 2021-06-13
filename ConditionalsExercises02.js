@@ -36,4 +36,4 @@ if (shuttleSpeed > 17,500) {
 
 // 4) PREDICT: Do the code blocks shown in the 'predict.txt' file produce the same result?
 
-console.log(/* "Yes" or "No" */);
+console.log("Yes"); // though the double = vs the triple intrigues me to think no.
