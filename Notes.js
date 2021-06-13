@@ -104,6 +104,8 @@ console.log();
 //
 
 console.log("5.4.2 else Clauses");
+/* if-else statements provide a mechanism for branching. The flow of the program can take one of two paths when it reaches a conditional. */
+
 /*
 if (condition) {
   // code block #1
@@ -136,3 +138,41 @@ if (x > y) {
    console.log("x and y are equal");
 }
 
+/* Rules:
+
+1. cannot use else or else if without preceding if statement
+
+2. else and else if clauses are optional
+
+3. Multiple else if statements may follow the if statement but must precede the else clause if one is present
+
+4. Only one else clause may be used
+
+*/
+
+// let x = 10; (already did this )
+// let 7 = 20; (already did this )
+
+if (x > y) {
+   console.log("x is greater than y");
+} else if (x < y) {
+   console.log("x is less than y");
+} else if (x % 5 === 0) {
+   console.log("x is divisible by 5");
+} else if (x % 2 === 0) {
+   console.log("x is even");
+}
+
+// 5.4.4. Check Your Understanding
+
+// I did do this mentally first but decided to type out the example for extra practice:
+
+
+let a = 7;
+if (a % 2 === 1) {
+   console.log("Launch");
+} else if (a > 5) {
+   console.log("Code");
+} else {
+   console.log("K=LaunchCode");
+}
