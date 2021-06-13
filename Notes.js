@@ -176,4 +176,28 @@ if (a % 2 === 1) {
 } else {
    console.log("LaunchCode");
 }
+console.log();
+//
 
+console.log("5.5 Nested Conditionals")
+// 
+
+let num1 = 7;
+
+if (num1 % 2 === 0) {
+   console.log("EVEN");
+}
+
+if (num1 > 0) {
+  console.log("POSITIVE");
+}
+
+// switch variable between num (declared earlier and num1, new variable for this exercise) 
+
+if (num1 % 2 === 0) {
+  console.log("EVEN");
+
+  if (num1 > 0) {
+    console.log("POSITIVE");
+  }
+}
