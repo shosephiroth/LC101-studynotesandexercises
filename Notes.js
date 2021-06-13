@@ -70,3 +70,69 @@ console.log("<=,>=,>,<"); //Comparison
 console.log("===,!==,==,!="); // Equality
 console.log("&&"); // Logical AND
 console.log("||"); // Logical OR
+console.log();
+
+
+console.log("// 5.4.1. if Statements");
+/* 
+
+if (condition) {
+   some code
+} 
+
+*/
+
+let billHasBeenPaid = false;
+
+if (!billHasBeenPaid) {
+  console.log("Your bill is due soon!");
+}
+
+let num = 4
+
+if (num % 2 === 0 && num > 3) {
+  console.log(num, "is even");
+  console.log(num, "is greater than 3");
+}
+
+// Make it more readable by adding first bracket at first line
+
+if (num % 2 === 0 && num > 3) 
+{ console.log(num, "is even");
+  console.log(num, "is greater than 3"); }
+console.log();
+//
+
+console.log("5.4.2 else Clauses");
+/*
+if (condition) {
+  // code block #1
+} else {
+  // code block # 2
+}
+*/
+
+billHasBeenPaid = true;
+
+if (!billHasBeenPaid) { //! = opposite meaning
+  console.log("Your bill is due soon!");
+} else{
+  console.log("Your payments are up to daate.");
+}
+console.log();
+//
+
+console.log("5.4.3 else if statements");
+//
+
+let x = 10;
+let y = 20;
+/* had to manually space the code below, is that normal? Maybe I'm use to "prettier" extension in vscode */
+if (x > y) {
+   console.log("x is greater than y");
+} else if (x < y) {
+   console.log("x is less than y");
+} else {
+   console.log("x and y are equal");
+}
+
