@@ -1,10 +1,14 @@
 // 6.8. Exercises: Debugging
 
-//Now find and fix the runtime error in a longer code sample.
-//Pay close attention to any line numbers mentioned in the message - these will help locate and repair the mistake in the code.
+// Run this sample code as-is and examine the output. 
+// Should the shuttle have launched? 
+// Did it?
+// Do not worry about fixing the code yet, we will do that in the next series of exercises.
 
 let launchReady = false;
-let fuelLevel = 27000;
+let fuelLevel = 17000;
+let crewStatus = true;
+let computerStatus = 'green';
 
 if (fuelLevel >= 20000) {
    console.log('Fuel level cleared.');
@@ -14,13 +18,17 @@ if (fuelLevel >= 20000) {
    launchReady = false;
 }
 
-if (launchReady) {
-   console.log("10, 9, 8...");
-   console.log("Fed parrot...");
-   console.log("6, 5, 4...");
-   console.log("Ignition...");
-   console.log("3, 2, 1...");
-   console.log("Liftoff!");
+if (crewStatus && computerStatus === 'green'){
+   console.log('Crew & computer cleared.');
+   launchReady = true;
 } else {
-   console.log("Launch scrubbed.");
+   console.log('WARNING: Crew or computer not ready!');
+   launchReady = false;
+}
+
+if (launchReady) {
+   console.log('10, 9, 8, 7, 6, 5, 4, 3, 2, 1...');
+   console.log('Liftoff!');
+} else {
+   console.log('Launch scrubbed.');
 }
