@@ -21,8 +21,7 @@ function askForName() {
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-console.log(question);
-candidateAnswer = input.question();
+candidateAnswer = input.question(question);
 }
 
 function gradeQuiz(candidateAnswers) {
