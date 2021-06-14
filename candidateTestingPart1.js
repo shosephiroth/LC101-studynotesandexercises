@@ -22,19 +22,17 @@ function askForName() {
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 console.log(question);
-candidateAnswer = input.question("");
-
+candidateAnswer = input.question();
 }
 
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-if candidateAnswer === correctAnswer {
+if (candidateAnswer === correctAnswer) {
    console.log("You are correct! *DJ Horn plays*");
 } else {
    console.log("You are incorrect. Womp womp!");    
 }
-
 
   let grade;
   
