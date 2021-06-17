@@ -281,3 +281,29 @@ e. console.log('Launch/tCode'); */
 
 // 7.8 Template Literals
 
+let name = "Jack";
+let currentAge = 9;
+
+console.log("Next year, " + name + " will be " + (currentAge + 1) + ".");
+
+/* Unfortunately, this process quickly gets tedious for any output that depends on multiple variables. Often, concatenation requires multiple test runs of the code in order to check for syntax errors and proper spacing within the output. Fortunately, JavaScript offers us a better way to accomplish this process.
+
+Template literals allow for the automatic insertion of expressions (including variables) into strings.
+
+While normal strings are enclosed in single or double quotes (' or "), template literals are enclosed in back-tick characters, `. Within a template literal, any expression surrounded by ${ } will be evaluated, with the resulting value included in the string. */
+
+// Template literals allow for variables and other expressions to be directly included in strings.
+
+console.log(`Next year, ${name} will be ${currentAge + 1}.`);
+
+/* Besides allowing us to include data in strings in a cleaner, more readable way, template literals also allow us to easily create multi-line strings without using string concatenation or special characters. */
+
+let poem = `The mind chases happiness.
+The heart creates happiness.
+The soul is happiness
+And it spreads happiness
+All-where.
+
+– Sri Chinmoy`;
+
+console.log(poem);
