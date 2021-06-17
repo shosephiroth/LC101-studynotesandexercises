@@ -307,3 +307,16 @@ All-where.
 – Sri Chinmoy`;
 
 console.log(poem);
+console.log();
+
+// 7.8.1 Check Your Understanding 
+
+let pluralNoun = "Geese";
+name = "Matt";
+let verb = "joking";
+let adjective = "haphazardly";
+let color = "green";
+
+console.log("JavaScript provides a "+ color +" collection of tools — including " + adjective + " syntax and " + pluralNoun + " — that allows "+ name +" to "+ verb +" with strings.");
+
+console.log(`JavaScript provides a ${color} collection of tools - including ${adjective} syntax and ${pluralNoun} + - that allows ${name} to ${verb} with strings`);
