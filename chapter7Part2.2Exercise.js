@@ -11,7 +11,7 @@ console.log(dna2);
 //b) Look for the gene "CAT" with ``indexOf()``. If found print, "CAT gene found", otherwise print, "CAT gene NOT found".
 
 
-if dna.indexOf("CAT"){
+if (dna.indexOf("CAT")){
    console.log("CAT gene found.");
 } else {
    console.log("CAT gene NOT found.");
