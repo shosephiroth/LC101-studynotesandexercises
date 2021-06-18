@@ -13,9 +13,35 @@ strArray1.includes(",");
 
 if (strArray1.includes(",")){
    console.log(`This string contains ","`);
-} else {
-   console.log("False");
-} 
+} else if (strArray1.includes(";")){
+   console.log(`This string contains ";"`);
+} else if (strArray1.includes(" ")){
+   console.log(`This string contains " "`)
+}
+
+let strArray2 = strings[1];
+console.log(strArray2);
+strArray1.includes(";");
+
+if (strArray2.includes(",")){
+   console.log(`This string contains ","`);
+} else if (strArray2.includes(";")){
+   console.log(`This string contains ";"`);
+} else if (strArray2.includes(" ")){
+   console.log(`This string contains " "`)
+}
+
+let strArray3 = strings[2];
+console.log(strArray3);
+strArray3.includes(" ");
+
+if (strArray3.includes(",")){
+   console.log(`This string contains ","`);
+} else if (strArray3.includes(";")){
+   console.log(`This string contains ";"`);
+} else if (strArray3.includes(" ")){
+   console.log(`This string contains " "`)
+}
 
 
 //b) If the string uses commas to separate the words, split it into an array, reverse the entries, and then join the array into a new comma separated string.
