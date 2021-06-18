@@ -7,7 +7,15 @@ strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 
 //a) Use the 'includes' method to check to see if the words in each string are separated by commas (,), semicolons (;) or just spaces.
 
+let strArray1 = strings[0];
+console.log(strArray1);
+strArray1.includes(",");
 
+if (strArray1.includes(",")){
+   console.log(`This string contains ","`);
+} else {
+   console.log("False");
+} 
 
 
 //b) If the string uses commas to separate the words, split it into an array, reverse the entries, and then join the array into a new comma separated string.
