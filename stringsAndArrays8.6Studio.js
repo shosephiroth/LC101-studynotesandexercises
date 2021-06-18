@@ -28,14 +28,19 @@ endOfString = str.slice(userStr);
 console.log(startOfString);
 console.log(endOfString);
 
-console.log(`This is the original string: ${str}; and this is the modified string: ${endOfString}${startOfString}`)
+console.log(`This is the original string: ${str}; and this is the modified string: ${endOfString}${startOfString}`);
+
+console.log();
 
 
 //c) Add validation to your code to deal with user inputs that are longer than the word. In such cases, default to moving 3 characters. Also, the template literal should note the error.
 
 strLength = (str.length - 1);
-if (userStr > str.length - 1){
+if (userStr >= str.length - 1){
    console.log(`Choose a number smaller than ${strLength}`);
-} else{
+} else if (userStr != Number(userStr)) {
+   console.log("That's not a number");
+}
+  else {
    console.log(`This is the original string: ${str}; and this is the modified string: ${endOfString}${startOfString}`)
 }
