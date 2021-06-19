@@ -3,3 +3,5 @@
 JavaScript has no .title method, but that won't stop us!  Use the string methods you know to print 'Title Case' from 'title case'. */
 
 let notTitle = 'title case';
+
+console.log(`${notTitle[0].toUpperCase()}` + `${notTitle.slice(1,5)} ` + `${notTitle[6].toUpperCase()}` + notTitle.slice(7));
