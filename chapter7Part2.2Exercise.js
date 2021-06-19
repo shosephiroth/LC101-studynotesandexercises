@@ -20,10 +20,17 @@ if (dna.indexOf("CAT")){
 
 //c) Use .slice() to print out the fifth gene (set of 3 characters) from the DNA strand.
 
+console.log(dna2.slice(15, 19));
+
 
 
 //d) Use a template literal to print, "The DNA strand is ___ characters long."
 
+console.log(`The DNA strand is ${dna2.length} characters long.`)
 
 
 //e) Just for fun, apply methods to ``dna`` and use another template literal to print, 'taco cat'.
+
+
+console.log(`${dna2.slice(12,15).toLowerCase()}` + `o ` + `${dna2.slice(40,43).toLowerCase()}`);
+
