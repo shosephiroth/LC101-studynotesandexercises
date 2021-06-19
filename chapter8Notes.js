@@ -103,3 +103,114 @@ javaScriptFrameworks2[2] = "Vue";
 
 //Notice the value at index 2 is not "Vue"
 console.log(javaScriptFrameworks2);
+
+/* 8.3. Array Methods
+As with strings, JavaScript provides us with useful methods for arrays. These methods will either alter an existing array, return information about the array, or create and return a new array.
+
+8.3.1. Common Array Methods
+Here is a sample of the most frequently used array methods. More complete lists can be found here:
+
+W3 Schools Array Methods
+MDN Web Docs
+ */
+
+
+
+// 
+// Methods That Return Information About The Array
+//
+
+// includes - arrayName.includes(item) 
+// Checks if an array contains the specified item
+
+//indexOf - arrayName.indexOf(item)
+// Returns the index of the FIRST occurrence of an item in the array. If the item is not in the array, -1 is returned.
+
+// 
+// Methods That Rearrange The Entries In The Array
+//
+
+// reverse - arrayName.reverse()
+// Reverses the order of elements in an array
+
+// sort - arrayName.sort()
+// Arranges the elements of an array into increasing order (sort of (AKA Kinda) =p)
+
+//
+// Methods That Add Or Remove Entries From An Array
+//
+
+// pop - arrayName.pop()
+// Removes and returns the LAST element in an array
+
+// push - arrayName.push(item1, item2, ...) 
+// Adds one or more items to the END of an array and returns the new length
+
+// shift - arrayName.shift()
+// Removes and returns the FIRST element in an array
+
+// splice - arrayName.splice(index, number, item1, item2, ...)
+// Adds, removes, or replaces one or more elements anywhere in the array
+
+// unshift - arrayName.unshift(item1, item2, ...)
+// Adds one or more items to the START of an array and returns the new length
+
+//
+// Methods That Create New Arrays
+//
+
+// concat - arr.concat(otherArray1, otherArray2, ...)
+// Combines two or more arrays and returns the result as a new array
+
+// join - arr.join('connector')
+// Combines all the elements of an array into a string
+
+//slice - arr.slice(start index, end index)
+// Copies selected entries of an array into a new array
+
+// split - stringName.split('delimiter')
+// Divides a string into smaller pieces, which are stored in a new array
+
+/* 8.3.2. Check Your Understanding
+Follow the links in the table above for the sort, slice, split and join methods. Review the content and then answer the following questions.
+
+//
+Question
+What is printed by the following code?
+
+//
+let charles = ['coder', 'Tech', 47, 23, 350];
+charles.sort();
+console.log(charles);
+//
+
+[350, 23, 47, 'Tech', 'coder']
+['coder', 'Tech', 23, 47, 350]
+[23, 47, 350, 'coder', 'Tech']
+[23, 350, 47, 'Tech', 'coder']
+
+//
+Question
+Which statement converts the string str = 'LaunchCode students rock!' into the array ['LaunchCode', 'students', 'rock!']?
+//
+
+str.join(" ");
+str.split(" ");
+str.join("");
+str.split("");
+
+//
+Question
+What is printed by the following program?
+
+//
+let groceryBag = ['bananas', 'apples', 'edamame', 'chips', 'cucumbers', 'milk', 'cheese'];
+let selectedItems = [];
+//
+----------------------------------------------
+selectedItems = groceryBag.slice(2, 5).sort();
+console.log(selectedItems);
+['chips', 'cucumbers', 'edamame']
+['chips', 'cucumbers', 'edamame', 'milk']
+['cheese', 'chips', 'cucumbers']
+['cheese', 'chips', 'cucumbers', 'edamame']
