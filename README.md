@@ -2,4 +2,4 @@
 LC101 practice problems/review
 
 Goal: To complete LC101 Bootcamp
-Current stage: Class 2 reading: conditionals and debugging
+Current stage: Class 4 reading: Repeating with Loops
