@@ -1,12 +1,24 @@
 //Part A #1: Initialize variables to store the following arrays. Remember to use descriptive names.
 
-let = ['chicken', 'pork', 'tofu', 'beef', 'fish', 'beans'];
-let = ['rice', 'pasta', 'corn', 'potato', 'quinoa', 'crackers'];
-let = ['peas', 'green beans', 'kale','edamame', 'broccoli', 'asparagus'];
-let = ['juice', 'milk', 'water', 'soy milk', 'soda', 'tea'];
-let = ['apple', 'banana', 'more kale','ice cream', 'chocolate', 'kiwi'];
+let meat = ['chicken', 'pork', 'tofu', 'beef', 'fish', 'beans'];
+let starch = ['rice', 'pasta', 'corn', 'potato', 'quinoa', 'crackers'];
+let vegetables = ['peas', 'green beans', 'kale','edamame', 'broccoli', 'asparagus'];
+let beverage = ['juice', 'milk', 'water', 'soy milk', 'soda', 'tea'];
+let fruit = ['apple', 'banana', 'more kale','ice cream', 'chocolate', 'kiwi'];
+
+fullPantry = [meat, starch, vegetables, beverage, fruit];
+
+console.log(fullPantry.length);
 
 //Part A #2: Construct a for loop that assembles a meal for each of 6 astronauts.
+
+for (let i = 0; i < 6; i++) {
+   console.log(meat[i]);
+   console.log(starch[i]);
+   console.log(vegetables[i]);
+   console.log(beverage[i]);
+   console.log(fruit[i]);
+}
 
 
 //Part C #5: Using a while loop, ask the user to select the number of meals to assemble.  Validate the input to make sure it is an integer from 1 - 6.
