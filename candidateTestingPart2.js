@@ -5,13 +5,13 @@ const input = require('readline-sync');
 // TODO 1.1a: Define candidateName // 
 let candidateName;
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
-// put questions in variables then put variables in array
-let q1 = input.question("Who was the first American woman in space?");
-let q2 = input.question("True or false: 5 kilometer == 5000 meters?");
-let q3 = input.question("(5 + 3)/2 * 10 = ?");
-let q4 = input.question("Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?");
-let q5 = input.question("What is the minimum crew size for the ISS?");
-// Same for answers 
+// Put questions in variables, then in arrays
+let q1 = "Who was the first American woman in space? ";
+let q2 = "True or false: 5 kilometer == 5000 meters? ";
+let q3 = "(5 + 3)/2 * 10 = ? ";
+let q4 = "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ";
+let q5 = "What is the minimum crew size for the ISS? ";
+// Put answers in variables, then in array
 let a1 = "Sally Ride";
 let a2 = "true";
 let a3 = "40";
@@ -35,14 +35,21 @@ let candidateAnswers = [cA1, cA2, cA3, cA4, cA5];
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-  candidateName = input.question("What is your name?");
+  candidateName = input.question("What is your name? ");
 
 }
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
+  // put questions in variables then put variables in array
+
   for (let i = 0; i < correctAnswers.length; i++) {
-       console.log()
+      cA1 = input.question(q1);
+      cA2 = input.question(q2); 
+      cA3 = input.question(q3); 
+      cA4 = input.question(q4); 
+      cA5 = input.question(q5); 
+      break; 
   }
 //candidateAnswer = input.question(question);
 }
@@ -51,7 +58,16 @@ function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
-console.log(`For question 1, you answered. The correct answer is ${correctAnswers[i]}`);
+console.log(`Hello ${candidateName}`)
+console.log(`For question 1, you answered ${cA1}. The correct answer is ${a1}`);
+
+console.log(`For question 2, you answered ${cA2}. The correct answer is ${a2}`);
+
+console.log(`For question 3, you answered ${cA3}. The correct answer is ${a3}`);
+
+console.log(`For question 4, you answered ${cA4}. The correct answer is ${a4}`);
+
+console.log(`For question 5, you answered ${cA5}. The correct answer is ${a5}`);
 
   let grade;
   
