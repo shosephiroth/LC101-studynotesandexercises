@@ -36,10 +36,41 @@ Construct ``for`` loops to accomplish the following tasks:
   a. Print each element of the array to a new line.
   b. Print each character of the string - in reverse order - to a new line. */ 
 
+let str = "LaunchCode";
+let ary = [1, 5, 'LC101', 'blue', 42];
+let strCopy = "";
+let aryCopy = [];
 
-
-
+//a
+for (let i = 0; i < 4; i++) {
+   console.log(ary[i]);
+}
+console.log();
+//b 
+for (let i = 0; i < str.length; i++){
+   console.log(str[i]);
+}
+console.log();
 
 /*Exercise #3:Construct a for loop that sorts the array [2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
   a. One array contains the even numbers, and the other holds the odds.
   b. Print the arrays to confirm the results. */
+
+// not working as intended just yet, will return to this 
+
+ary2 = [2, 3, 13, 18, -5, 38, -10, 11, 0, 104];
+
+ary3 = [];
+ary4 = [];
+
+for (let i = 0; i < ary2.length; i++) {
+  if (ary2[i] % 2 == 0) {
+   ary3 = ary2.slice(i);
+   console.log(ary3);
+  } else {
+   ary4 = ary2.slice(i);
+   console.log(ary4);
+  }
+   
+   //ary3 += ary2[i]; // idk what I was doing with this lol
+}
