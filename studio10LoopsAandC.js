@@ -8,20 +8,16 @@ let fruit = ['apple', 'banana', 'more kale','ice cream', 'chocolate', 'kiwi'];
 
 let fullPantry = [meat, starch, vegetables, beverage, fruit];
 
-let mealChoice = "";
+let mealChoice = [];
 
 console.log(fullPantry.length);
 
 //Part A #2: Construct a for loop that assembles a meal for each of 6 astronauts.
 
-for (let i = 0; i < fullPantry.length-1; i++) {
-  for (let j = 0; j < meat.length; j++);
-    console.log(meat[i]);
-    console.log(starch[i]);
-    console.log(vegetables[i]);
-    console.log(beverage[i]);
-    console.log(fruit[i]);
-    console.log(fullPantry[i]);
+for (let i = 0; i < fullPantry.length; i++) {
+  for (let j = 0; j < fullPantry[i].length; j++);
+   mealChoice = fullPantry[i][j];
+   console.log(mealChoice);
 }
 
 
