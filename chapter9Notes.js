@@ -76,3 +76,58 @@ for (let i = 0; i < languages.length; i++) {
   console.log(languages[i]);
 }
 
+let phrase = "LaunchCode's LC101";
+
+console.log(phrase.length);
+
+for (let i = 0; i < 42; i++) {
+   console.log("LaunchCode");
+}
+
+console.log();
+// This never happens because start condition is not met
+for (let i = 0; i < -1; i++) {
+   console.log("LaunchCode");
+}
+//infinite loop
+/*
+for (let i = 0; i < 51; i--) {
+   console.log(i);
+}
+*/
+
+// 9.5.2 Reverseing a string
+
+let str = "blue";
+let reversed ="";
+
+for (let i = 0; i < str.length; i++) {
+   reversed = str[i] + reversed;
+}
+
+console.log(reversed);
+
+// 9.6.3. for Loops Rewritten as while Loops
+
+for (let i = 0; i < 51; i++) {
+   console.log(i);
+}
+
+console.log();
+
+let i = 0;
+
+while (i < 51) {
+   console.log(i);
+   i++;
+}
+
+const input = require('readline-sync');
+
+let num = input.question('Please enter a positive number;');
+num = Number(num);
+
+while (num <= 0) {
+  num = input.question('Invalid Input. Please enter a positive number:');
+  num = Number(num);
+}
