@@ -46,6 +46,6 @@ function newFunction(arrayFunc) {
      array2.push(reverseCharacters(arrayFunc[i]));
 
    }
-  return array2;
+  return array2.reverse();
 }
 console.log(newFunction(arrayTest2))
