@@ -24,12 +24,14 @@ let cA3;
 let cA4;
 let cA5;
 //
-let question = "Who was the first woman in space? ";
-let correctAnswer = "Sally Ride";
-let candidateAnswer = [];
+
+
 let questions = [q1, q2, q3, q4, q5];
 let correctAnswers = [a1, a2, a3, a4, a5];
 let candidateAnswers = [cA1, cA2, cA3, cA4, cA5];
+let question = questions;
+let correctAnswer = correctAnswers;
+let candidateAnswer = candidateAnswers;
 
 // Create Score to total correct answers
 let score = 0;
@@ -43,15 +45,15 @@ function askForName() {
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
   // put questions in variables then put variables in array
-
-  for (let i = 0; i < correctAnswers.length; i++) {
-      cA1 = input.question(q1);
-      cA2 = input.question(q2); 
-      cA3 = input.question(q3); 
-      cA4 = input.question(q4); 
-      cA5 = input.question(q5); 
-      break; 
-  }
+//console.log(`${candidateName}, `)
+  
+    cA1 = input.question(q1);
+    cA2 = input.question(q2); 
+    cA3 = input.question(q3); 
+    cA4 = input.question(q4); 
+    cA5 = input.question(q5); 
+       
+  
 //candidateAnswer = input.question(question);
 }
 
@@ -71,13 +73,13 @@ console.log(`For question 4, you answered ${cA4}. The correct answer is ${a4}`);
 console.log(`For question 5, you answered ${cA5}. The correct answer is ${a5}`);
 
 for (let i = 0; i < correctAnswers.length; i++) {
-   if (candidateAnswers[i] === correctAnswers[i]) {
+   if (candidateAnswer[i] === correctAnswer[i]) {
       score += 1;
    } 
 }
 
   let grade = score;
-  
+  console.log(score);
 
   return grade;
 }
@@ -105,4 +107,4 @@ module.exports = {
   runProgram: runProgram
 };
 
-gradeQuiz()
+runProgram()
