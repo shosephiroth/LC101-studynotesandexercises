@@ -31,7 +31,8 @@ let questions = [q1, q2, q3, q4, q5];
 let correctAnswers = [a1, a2, a3, a4, a5];
 let candidateAnswers = [cA1, cA2, cA3, cA4, cA5];
 
-
+// Create Score to total correct answers
+let score = 0;
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
@@ -69,7 +70,13 @@ console.log(`For question 4, you answered ${cA4}. The correct answer is ${a4}`);
 
 console.log(`For question 5, you answered ${cA5}. The correct answer is ${a5}`);
 
-  let grade;
+for (let i = 0; i < correctAnswers.length; i++) {
+   if (candidateAnswers[i] === correctAnswers[i]) {
+      score += 1;
+   } 
+}
+
+  let grade = score;
   
 
   return grade;
@@ -97,3 +104,5 @@ module.exports = {
   gradeQuiz: gradeQuiz,
   runProgram: runProgram
 };
+
+gradeQuiz()
