@@ -64,24 +64,34 @@ function gradeQuiz(candidateAnswers) {
 console.log(`Hello ${candidateName}`)
 console.log(`For question 1, you answered ${cA1}. The correct answer is ${a1}`);
 
-console.log(`For question 2, you answered ${cA2}. The correct answer is ${a2}`);
 
-console.log(`For question 3, you answered ${cA3}. The correct answer is ${a3}`);
 
-console.log(`For question 4, you answered ${cA4}. The correct answer is ${a4}`);
-
-console.log(`For question 5, you answered ${cA5}. The correct answer is ${a5}`);
-
+/*
 for (let i = 0; i < correctAnswers.length; i++) {
    if (candidateAnswer[i] === correctAnswer[i]) {
       score += 1;
    } 
 }
+*/
+  
+
+  console.log(`For question 2, you answered ${cA2}. The correct answer is ${a2}`);
+  if (cA1 === a1) {
+     score += 1;
+  }
+
+  console.log(`For question 3, you answered ${cA3}. The correct answer is ${a3}`);
+
+  console.log(`For question 4, you answered ${cA4}. The correct answer is ${a4}`);
+
+  console.log(`For question 5, you answered ${cA5}. The correct answer is ${a5}`);
 
   let grade = score;
-  console.log(score);
-
   return grade;
+  console.log(score);
+  console.log(grade);
+
+  
 }
 
 function runProgram() {
@@ -107,4 +117,5 @@ module.exports = {
   runProgram: runProgram
 };
 
-runProgram()
+runProgram();
+
