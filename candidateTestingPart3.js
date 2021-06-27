@@ -24,17 +24,14 @@ let cA3;
 let cA4;
 let cA5;
 //
-
-
+let question = "Who was the first woman in space? ";
+let correctAnswer = "Sally Ride";
+let candidateAnswer = [];
 let questions = [q1, q2, q3, q4, q5];
 let correctAnswers = [a1, a2, a3, a4, a5];
 let candidateAnswers = [cA1, cA2, cA3, cA4, cA5];
-let question = questions;
-let correctAnswer = correctAnswers;
-let candidateAnswer = candidateAnswers;
 
-// Create Score to total correct answers
-let score = 0;
+
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
@@ -45,15 +42,15 @@ function askForName() {
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
   // put questions in variables then put variables in array
-//console.log(`${candidateName}, `)
-  
-    cA1 = input.question(q1);
-    cA2 = input.question(q2); 
-    cA3 = input.question(q3); 
-    cA4 = input.question(q4); 
-    cA5 = input.question(q5); 
-       
-  
+
+  for (let i = 0; i < correctAnswers.length; i++) {
+      cA1 = input.question(q1);
+      cA2 = input.question(q2); 
+      cA3 = input.question(q3); 
+      cA4 = input.question(q4); 
+      cA5 = input.question(q5); 
+      break; 
+  }
 //candidateAnswer = input.question(question);
 }
 
@@ -61,24 +58,15 @@ function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
-console.log(`Hello ${candidateName}`)
-console.log(`For question 1, you answered ${cA1}. The correct answer is ${a1}`);
+  let score = 0;
 
-
-
-/*
-for (let i = 0; i < correctAnswers.length; i++) {
-   if (candidateAnswer[i] === correctAnswer[i]) {
-      score += 1;
-   } 
-}
-*/
-  
+  console.log(`Hello ${candidateName}`)
+  console.log(`For question 1, you answered ${cA1}. The correct answer is ${a1}`);
+  if (cA1 === a1) {
+    score += 1;
+  }
 
   console.log(`For question 2, you answered ${cA2}. The correct answer is ${a2}`);
-  if (cA1 === a1) {
-     score += 1;
-  }
 
   console.log(`For question 3, you answered ${cA3}. The correct answer is ${a3}`);
 
@@ -87,11 +75,10 @@ for (let i = 0; i < correctAnswers.length; i++) {
   console.log(`For question 5, you answered ${cA5}. The correct answer is ${a5}`);
 
   let grade = score;
-  return grade;
-  console.log(score);
-  console.log(grade);
-
   
+  console.log(score); // test
+  console.log(grade); // test
+  return grade; // this never returns my grade?
 }
 
 function runProgram() {
@@ -116,6 +103,3 @@ module.exports = {
   gradeQuiz: gradeQuiz,
   runProgram: runProgram
 };
-
-runProgram();
-
