@@ -67,12 +67,24 @@ function gradeQuiz(candidateAnswers) {
   }
 
   console.log(`For question 2, you answered ${cA2}. The correct answer is ${a2}`);
+  if (cA2 === a2) {
+    score += 1;
+  }
 
   console.log(`For question 3, you answered ${cA3}. The correct answer is ${a3}`);
+  if (cA3 === a3) {
+    score += 1;
+  }
 
   console.log(`For question 4, you answered ${cA4}. The correct answer is ${a4}`);
+  if (cA4 === a4) {
+    score += 1;
+  }
 
   console.log(`For question 5, you answered ${cA5}. The correct answer is ${a5}`);
+  if (cA5 === a5) {
+    score += 1;
+  }
 
   let grade = score;
   
