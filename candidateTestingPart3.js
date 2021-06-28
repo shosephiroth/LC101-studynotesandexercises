@@ -86,10 +86,10 @@ function gradeQuiz(candidateAnswers) {
     score += 1;
   }
 
-  let grade = score;
+  let grade = (score / 5) * 100;
   
   console.log(score); // test
-  console.log(grade); // test
+  console.log(`${candidateName}, you got a score of ${grade}%`); // test
   return grade; // this never returns my grade?
 }
 
