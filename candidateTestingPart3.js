@@ -88,9 +88,17 @@ function gradeQuiz(candidateAnswers) {
   }
 
   let grade = (score / 5) * 100;
+
+  if (grade >= 70){
+     console.log(`>>> Overall Grade: ${grade}% (${score} of 5 responses correct) <<<`);
+     console.log(`>>> Status: PASSED <<<`);
+  } else {
+     console.log(`>>> Overall Grade: ${grade}% (${score} of 5 responses correct) <<<`);
+     console.log(`>>> Status: FAILED <<<`);
+  }
   
-  console.log(score); // test
-  console.log(`${candidateName}, you got a score of ${grade}%`); // test
+  // console.log(score); // test
+  // console.log(`${candidateName}, you got a score of ${grade}%`); // test
   return grade; // this never returns my grade?
 }
 
