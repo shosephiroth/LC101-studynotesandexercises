@@ -43,14 +43,15 @@ function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
   // put questions in variables then put variables in array
 
-  for (let i = 0; i < correctAnswers.length; i++) {
-      cA1 = input.question(q1);
-      cA2 = input.question(q2); 
-      cA3 = input.question(q3); 
-      cA4 = input.question(q4); 
-      cA5 = input.question(q5); 
+//
+   
+  cA1 = input.question(q1);
+  cA2 = input.question(q2); 
+  cA3 = input.question(q3); 
+  cA4 = input.question(q4); 
+  cA5 = input.question(q5); 
       
-  }
+  
 //candidateAnswer = input.question(question);
 }
 
