@@ -89,7 +89,7 @@ function gradeQuiz(candidateAnswers) {
 
   let grade = (score / 5) * 100;
 
-  if (grade >= 70){
+  if (grade >= 80){
      console.log(`>>> Overall Grade: ${grade}% (${score} of 5 responses correct) <<<`);
      console.log(`>>> Status: PASSED <<<`);
   } else {
