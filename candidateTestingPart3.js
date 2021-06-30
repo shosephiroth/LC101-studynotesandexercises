@@ -63,12 +63,12 @@ function gradeQuiz(candidateAnswers) {
 
   console.log(`Hello ${candidateName}`)
   console.log(`For question 1, you answered ${cA1}. The correct answer is ${a1}`);
-  if (cA1 === a1) {
+  if (cA1.toUpperCase() === a1.toUpperCase()) {
     score += 1;
   }
 
   console.log(`For question 2, you answered ${cA2}. The correct answer is ${a2}`);
-  if (cA2 === a2) {
+  if (cA2.toUpperCase() === a2.toUpperCase()) {
     score += 1;
   }
 
@@ -78,7 +78,7 @@ function gradeQuiz(candidateAnswers) {
   }
 
   console.log(`For question 4, you answered ${cA4}. The correct answer is ${a4}`);
-  if (cA4 === a4) {
+  if (cA4.toUpperCase() === a4.toUpperCase()) {
     score += 1;
   }
 
