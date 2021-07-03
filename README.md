@@ -2,4 +2,4 @@
 LC101 practice problems/review
 
 Goal: To complete LC101 Bootcamp
-Current stage: Class Reading: Modules
+Current stage: Class 8 Reading: Modules
