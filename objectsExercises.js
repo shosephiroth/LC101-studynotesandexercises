@@ -60,7 +60,7 @@ let terrificTardigrade = {
 
 console.log(superChimpOne.move());
 
-let astronautsCrewArray = [superChimpOne, salamander, superChimpTwo];
+let astronautsCrewArray = [superChimpOne, salamander, superChimpTwo, busyBeagle, terrificTardigrade];
 
 
 // After you have created the other object literals, add the astronautID property to each one.
@@ -69,7 +69,7 @@ let astronautsCrewArray = [superChimpOne, salamander, superChimpTwo];
 
 // Print out the relevant information about each animal.
 
-function crewReports(array) {
+function crewReports([array]) {
   for (item in array) {
    console.log(`Crew report!`);
    console.log(`${array.name} is a ${array.species}
