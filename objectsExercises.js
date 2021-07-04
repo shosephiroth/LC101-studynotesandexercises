@@ -60,7 +60,7 @@ let terrificTardigrade = {
 
 console.log(superChimpOne.move());
 
-astronautsCrewArray = [];
+let astronautsCrewArray = [superChimpOne, salamander, superChimpTwo];
 
 
 // After you have created the other object literals, add the astronautID property to each one.
@@ -69,4 +69,13 @@ astronautsCrewArray = [];
 
 // Print out the relevant information about each animal.
 
+function crewReports(array) {
+  for (item in array) {
+   console.log(`Crew report!`);
+   console.log(`${array.name} is a ${array.species}
+   `);
+  }
+}
+
+crewReports (astronautsCrewArray);
 // Start an animal race!
