@@ -71,13 +71,16 @@ let astronautsCrewArray = [superChimpOne, salamander, superChimpTwo, busyBeagle,
 
 function crewReports([array]) {
   for (item in array) {
-    for (item in array) {
-      console.log(`Crew report!`);
-      console.log(`${array} is a ${array[item]}
-    `);
-    }
+   console.log(`Crew report!`);
+   console.log(`${array.name} is a ${array[item]}
+   `);
+   for (item in array) {
+     console.log(`${array} are an ${array[item]}`);
+     console.log(typeOf(array));
+     console.log(typeOf(array[item]));
+   }
   }
 }
 
-crewReports (astronautsCrewArray);
+console.log(crewReports (astronautsCrewArray));
 // Start an animal race!
