@@ -71,9 +71,11 @@ let astronautsCrewArray = [superChimpOne, salamander, superChimpTwo, busyBeagle,
 
 function crewReports([array]) {
   for (item in array) {
-   console.log(`Crew report!`);
-   console.log(`${array[item[item]]} is a ${array[item]}
-   `);
+    for (item in array) {
+      console.log(`Crew report!`);
+      console.log(`${array} is a ${array[item]}
+    `);
+    }
   }
 }
 
