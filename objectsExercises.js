@@ -76,8 +76,8 @@ function crewReports([array]) {
    `);
    for (item in array) {
      console.log(`${array} are an ${array[item]}`);
-     console.log(typeOf(array));
-     console.log(typeOf(array[item]));
+     console.log(typeof(array));
+     console.log(typeof(array[item]));
    }
   }
 }
