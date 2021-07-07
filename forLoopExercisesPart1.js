@@ -65,10 +65,10 @@ ary4 = [];
 
 for (let i = 0; i < ary2.length; i++) {
   if (ary2[i] % 2 == 0) {
-   ary3.push(ary2.slice(i));
+   ary3.sort(ary2.slice(i));
    console.log(ary3);
   } else {
-   ary4.push(ary2.slice(i));
+   ary4.sort(ary2.slice(i));
    console.log(ary4);
   }
    
