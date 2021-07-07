@@ -30,8 +30,6 @@ for (let i = 50; i > 20; i--) {
 
 /*Exercise #2: 
 Initialize two variables to hold the string “LaunchCode” and the array [1, 5, ‘LC101’, ‘blue’, 42].
-
-
 Construct ``for`` loops to accomplish the following tasks:
   a. Print each element of the array to a new line.
   b. Print each character of the string - in reverse order - to a new line. */ 
@@ -65,14 +63,21 @@ ary4 = [];
 
 for (let i = 0; i < ary2.length; i++) {
   if (ary2[i] % 2 == 0) {
-   ary3.sort(ary2.slice(i));
+   ary3.push(ary2.slice(Number(i)));
+   ary3.sort();
    console.log(ary3);
   } else {
-   ary4.sort(ary2.slice(i));
+   ary4.push(ary2.slice(Number(i)));
    console.log(ary4);
+   ary4.sort();
+
   }
    
    //ary3 += ary2[i]; // idk what I was doing with this lol
 }
+console.log();
+console.log();
 console.log(ary3);
+console.log();
+console.log();
 console.log(ary4);
