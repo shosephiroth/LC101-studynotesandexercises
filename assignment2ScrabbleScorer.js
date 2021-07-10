@@ -34,9 +34,13 @@ function oldScrabbleScorer(word) {
 
 // 1. Modify the provided initialPrompt() function to prompt the user to enter a word to score.
 
+// 2. Use the oldScrabbleScorer() function provided to score the word provided by the user. Print the result to the console.
+
 function initialPrompt() {
    console.log("Let's play some scrabble!");
    candidateWord = input.question('Enter a word: ');
+   console.log(oldScrabbleScorer(candidateWord));
+
 };
 
 let simpleScore;
