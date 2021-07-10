@@ -32,6 +32,8 @@ function oldScrabbleScorer(word) {
 // your job is to finish writing these functions and variables that we've named //
 // don't change the names or your program won't work as expected. //
 
+// A) Initial Prompt
+
 // 1. Modify the provided initialPrompt() function to prompt the user to enter a word to score.
 
 // 2. Use the oldScrabbleScorer() function provided to score the word provided by the user. Print the result to the console.
@@ -43,7 +45,11 @@ function initialPrompt() {
 
 };
 
-let simpleScore;
+// B) Add and Organize Scoring Algorithms
+
+// 1. simpleScore: Define a function that takes a word as a parameter and returns a numerical score. Each letter within the word is worth 1 point.
+
+let simpleScore function;
 
 let vowelBonusScore;
 
