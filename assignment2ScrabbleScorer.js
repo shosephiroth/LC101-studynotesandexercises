@@ -49,7 +49,12 @@ function initialPrompt() {
 
 // 1. simpleScore: Define a function that takes a word as a parameter and returns a numerical score. Each letter within the word is worth 1 point.
 
-let simpleScore function;
+let simpleScore = function (word) {
+   let simpScore = 0;
+   for (let i = 0; i < word.length; i++) {
+      word[i]
+   }
+};
 
 let vowelBonusScore;
 
