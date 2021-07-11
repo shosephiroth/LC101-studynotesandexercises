@@ -53,7 +53,7 @@ let simpleScore = function (word) {
    let simpScore = 0;
    for (let i = 0; i < word.length; i++) {
      console.log(i);
-     return i;
+     //return i;
    }
 };
 
