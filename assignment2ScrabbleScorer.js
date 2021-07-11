@@ -60,7 +60,18 @@ let simpleScore = function (word) {
 //test
 //simpleScore('money');
 
-let vowelBonusScore;
+let vowelBonusScore = function (word) {
+ for (let i = 0; i < word.length; i++) {
+    if (word[i] === oldPointStructure[i]) {
+      console.log(word[i]);
+      //return i;
+    } else {
+      console.log('no worky');
+    }
+ }
+}; 
+
+console.log(vowelBonusScore('money'));
 
 let scrabbleScore;
 
