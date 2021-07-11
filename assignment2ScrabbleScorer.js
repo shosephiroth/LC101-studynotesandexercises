@@ -64,7 +64,7 @@ let simpleScore = function (word) {
 
 let vowelBonusScore = function (word) {
  for (let i = 0; i < word.length; i++) {
-    if (word.charAt(i) === oldPointStructure[i]) {
+    if word.includes('a', 'e', 'i', 'o', 'u') {
       //test
       console.log(word[i]);
       //return i;
