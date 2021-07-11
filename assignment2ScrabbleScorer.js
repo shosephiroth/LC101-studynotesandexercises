@@ -52,7 +52,8 @@ function initialPrompt() {
 let simpleScore = function (word) {
    let simpScore = 0;
    for (let i = 0; i < word.length; i++) {
-      word[i]
+     simpScore += simpScore;
+     return simpScore;
    }
 };
 
