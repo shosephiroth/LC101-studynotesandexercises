@@ -52,10 +52,12 @@ function initialPrompt() {
 let simpleScore = function (word) {
    let simpScore = 0;
    for (let i = 0; i < word.length; i++) {
-     simpScore += simpScore;
-     return simpScore;
+     console.log(i);
+     return i;
    }
 };
+
+simpleScore('money');
 
 let vowelBonusScore;
 
