@@ -75,7 +75,7 @@ let vowelBonusScore = function (word) {
  }
 }; 
 
-console.log(vowelBonusScore('money'));
+vowelBonusScore('money');
 
 let scrabbleScore;
 
