@@ -96,6 +96,34 @@ let scrabbleScore;
 
 /* Once you've written these scoring functions, organize all three of the scoring options into an array. Your program will use the scoringAlgorithms array to retrieve information about the three scoring algorithms and convey that information to the user. */
 
+// OKAY this next set of instructions changes things.. 0.o 
+
+/* 1. Finish writing the scoringAlgorithms array. It should be populated with three objects, one for each of the three scoring options. Each object should contain three keys: name, description, and scoringFunction. */
+
+// QUESTIONS I HAVE:
+
+// So was I supposed to make the original array mentioned into a dictionary?
+
+// For the 'Score Function' key value, should it be the actual function ot its desc?
+
+simpleScoreObject = {
+  name: "Simple Score",
+  description: "Each letter is worth 1 point.",
+  score_function: "A function with a parameter for user input that returns a score."
+};
+
+vowelBonusScoreObject = {
+  name: "Bonus Vowels",
+  description: "Vowels are 3 pts, consonants are 1 pt.",
+  score_function: "A function that returns a score based on the number of vowels and consonants."
+};
+
+oldScrabbleScorerObject = {
+  name: "Scrabble",
+  description: "The traditional scoring algorithm.",
+  score_function: "Uses the oldScrabbleScorer() function to determine the score for a given word."
+};
+
 const scoringAlgorithms = [oldScrabbleScorer, simpleScore, vowelBonusScore];
 
 function scorerPrompt() {}
