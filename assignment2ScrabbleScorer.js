@@ -94,7 +94,9 @@ let vowelBonusScore = function (word) {
 
 let scrabbleScore;
 
-const scoringAlgorithms = [];
+/* Once you've written these scoring functions, organize all three of the scoring options into an array. Your program will use the scoringAlgorithms array to retrieve information about the three scoring algorithms and convey that information to the user. */
+
+const scoringAlgorithms = [oldScrabbleScorer, simpleScore, vowelBonusScore];
 
 function scorerPrompt() {}
 
