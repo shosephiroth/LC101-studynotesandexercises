@@ -87,6 +87,8 @@ let vowelBonusScore = function (word) {
       console.log(`Score is ${score}`);
     }
  }
+
+ return score;
 }; 
 
 // test
@@ -124,7 +126,7 @@ oldScrabbleScorerObject = {
   score_function: oldScrabbleScorer
 };
 
-const scoringAlgorithms = [oldScrabbleScorer, simpleScore, vowelBonusScore];
+const scoringAlgorithms = [simpleScore, vowelBonusScore, oldScrabbleScorer,];
 
 // 3. Finish writing scorerPrompt() so that the user can select which scoring algorithm to use when the program scores their word. Use the selected algorithm to determine the score for the word:
 
@@ -157,8 +159,8 @@ function scorerPrompt() {
 
 // tests given by the assignment:
 
-console.log("algorithm name: ", scoringAlgorithms[0].name);
-console.log("scoringFunction result: ", scoringAlgorithms[0].scoringFunction("JavaScript"));
+//console.log("algorithm name: ", scoringAlgorithms[0].name);
+//console.log("scoringFunction result: ", scoringAlgorithms[0].scoringFunction("JavaScript"));
 
 // these console logs above currently do not work and point to
 // the original array being a dictionary not an array possibly?
