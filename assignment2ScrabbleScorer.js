@@ -150,7 +150,8 @@ function scorerPrompt() {
  }
 }
 
-scorerPrompt();
+//test
+//scorerPrompt();
 
 function transform() {};
 
