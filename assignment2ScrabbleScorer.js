@@ -75,12 +75,16 @@ let vowelBonusScore = function (word) {
       console.log(word[i]);
       points = 1
       score = score + points;
+      console.log(`Points for '${word[i]}': ${points}\n`);
+      console.log(`Score is ${score}`);
       //return i;
     } else {
       //test
       console.log('no worky');
       points = 3
-      score = score + points;
+      score = score + points;      
+      console.log(`Points for '${word[i]}': ${points}\n`);
+      console.log(`Score is ${score}`);
     }
  }
 }; 
