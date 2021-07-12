@@ -67,14 +67,20 @@ let vowels = ['a', 'e', 'i', 'o', 'u', 'y']
 
 let vowelBonusScore = function (word) {
   word = word.toLowerCase();
+  let points = 0;
+  let score = 0;
   for (let i = 0; i < vowels.length; i++) {
     if (vowels.includes(word[i])) {
       //test
       console.log(word[i]);
+      points = 1
+      score = score + points;
       //return i;
     } else {
       //test
       console.log('no worky');
+      points = 3
+      score = score + points;
     }
  }
 }; 
