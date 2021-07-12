@@ -144,7 +144,9 @@ function scorerPrompt() {
        //test
        console.log(3);
 
-     } else return scorerPrompt();
+     } else {
+      return scorerPrompt();
+     }
  }
 }
 
