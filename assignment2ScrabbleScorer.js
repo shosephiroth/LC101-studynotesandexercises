@@ -109,19 +109,19 @@ let scrabbleScore;
 simpleScoreObject = {
   name: "Simple Score",
   description: "Each letter is worth 1 point.",
-  score_function: simpleScore
+  score_function: simpleScore()
 };
 
 vowelBonusScoreObject = {
   name: "Bonus Vowels",
   description: "Vowels are 3 pts, consonants are 1 pt.",
-  score_function: vowelBonusScore
+  score_function: vowelBonusScore()
 };
 
 oldScrabbleScorerObject = {
   name: "Scrabble",
   description: "The traditional scoring algorithm.",
-  score_function: oldScrabbleScorer
+  score_function: oldScrabbleScorer()
 };
 
 const scoringAlgorithms = [oldScrabbleScorer, simpleScore, vowelBonusScore];
@@ -131,13 +131,16 @@ const scoringAlgorithms = [oldScrabbleScorer, simpleScore, vowelBonusScore];
 function scorerPrompt() {
    //test
    let userInput = input.question('Choose a scoring algorithm: ');
-   if (userInput === 0) {
+   while (userInput !== 0 || 1 || 2) {
+     if (userInput === 0) {
+       return 
       
-   } else if (userInput === 1) {
+     } else if (userInput === 1) {
 
-   } else if (userInput === 2) {
+     } else if (userInput === 2) {
 
-   } else return scorerPrompt();
+     } else return scorerPrompt();
+ }
 }
 
 scorerPrompt();
