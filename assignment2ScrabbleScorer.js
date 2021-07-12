@@ -131,6 +131,13 @@ const scoringAlgorithms = [oldScrabbleScorer, simpleScore, vowelBonusScore];
 function scorerPrompt() {
    //test
    let userInput = input.question('Choose a scoring algorithm: ');
+   if (userInput === 0) {
+      
+   } else if (userInput === 1) {
+
+   } else if (userInput === 2) {
+
+   } else return scorerPrompt();
 }
 
 scorerPrompt();
