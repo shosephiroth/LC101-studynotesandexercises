@@ -148,10 +148,11 @@ function scorerPrompt() {
       return scorerPrompt();
      }
  }
+ return scoringAlgorithms[userInput];
 }
 
 //test
-//scorerPrompt();
+scorerPrompt();
 
 function transform() {};
 
