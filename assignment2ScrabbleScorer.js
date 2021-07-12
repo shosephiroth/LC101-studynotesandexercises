@@ -153,6 +153,15 @@ function scorerPrompt() {
 
 //test
 //scorerPrompt();
+// Simple scoring
+
+// tests given by the assignment:
+
+console.log("algorithm name: ", scoringAlgorithms[0].name);
+console.log("scoringFunction result: ", scoringAlgorithms[0].scoringFunction("JavaScript"));
+
+// these console logs above currently do not work and point to
+// the original array being a dictionary not an array possibly?
 
 function transform() {};
 
