@@ -109,19 +109,19 @@ let scrabbleScore;
 simpleScoreObject = {
   name: "Simple Score",
   description: "Each letter is worth 1 point.",
-  score_function: "A function with a parameter for user input that returns a score."
+  score_function: simpleScore
 };
 
 vowelBonusScoreObject = {
   name: "Bonus Vowels",
   description: "Vowels are 3 pts, consonants are 1 pt.",
-  score_function: "A function that returns a score based on the number of vowels and consonants."
+  score_function: vowelBonusScore
 };
 
 oldScrabbleScorerObject = {
   name: "Scrabble",
   description: "The traditional scoring algorithm.",
-  score_function: "Uses the oldScrabbleScorer() function to determine the score for a given word."
+  score_function: oldScrabbleScorer
 };
 
 const scoringAlgorithms = [oldScrabbleScorer, simpleScore, vowelBonusScore];
