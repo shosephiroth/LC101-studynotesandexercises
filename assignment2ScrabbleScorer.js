@@ -126,7 +126,11 @@ oldScrabbleScorerObject = {
 
 const scoringAlgorithms = [oldScrabbleScorer, simpleScore, vowelBonusScore];
 
-function scorerPrompt() {}
+// 3. Finish writing scorerPrompt() so that the user can select which scoring algorithm to use when the program scores their word. Use the selected algorithm to determine the score for the word:
+
+function scorerPrompt() {
+   let userInput = question.input('Choose a scoring algorithm');
+}
 
 function transform() {};
 
