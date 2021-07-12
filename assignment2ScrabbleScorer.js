@@ -66,7 +66,7 @@ let vowels = ['a', 'e', 'i', 'o', 'u', 'y']
 
 let vowelBonusScore = function (word) {
  for (let i = 0; i < vowels.length; i++) {
-    if (word.toLowerCase().includes(vowels[i])) {
+    if (vowels.includes(word[i].toLowerCase())) {
       //test
       console.log(word[i]);
       //return i;
