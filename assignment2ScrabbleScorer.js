@@ -62,10 +62,12 @@ let simpleScore = function (word) {
 
 // 2. vowelBonusScore: Define a function that takes a word as a parameter and returns a score. Each vowel within the word is worth 3 points, and each consonant is worth 1 point.
 
+// create array for vowels
 let vowels = ['a', 'e', 'i', 'o', 'u', 'y']
 
 let vowelBonusScore = function (word) {
- for (let i = 0; i < vowels.length; i++) {
+  word = word.toLowerCase();
+  for (let i = 0; i < vowels.length; i++) {
     if (vowels.includes(word[i])) {
       //test
       console.log(word[i]);
@@ -77,7 +79,7 @@ let vowelBonusScore = function (word) {
  }
 }; 
 
-vowelBonusScore('money');
+vowelBonusScore('MONEY');
 
 let scrabbleScore;
 
