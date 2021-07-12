@@ -152,7 +152,7 @@ function scorerPrompt() {
 }
 
 //test
-scorerPrompt();
+//scorerPrompt();
 
 function transform() {};
 
