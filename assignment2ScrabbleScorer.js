@@ -72,7 +72,7 @@ let vowelBonusScore = function (word) {
   for (let i = 0; i < vowels.length; i++) {
     if (vowels.includes(word[i])) {
       //test
-      console.log(word[i]);
+      //console.log(word[i]);
       points = 1
       score = score + points;
       console.log(`Points for '${word[i]}': ${points}\n`);
@@ -80,7 +80,7 @@ let vowelBonusScore = function (word) {
       //return i;
     } else {
       //test
-      console.log('no worky');
+      //console.log('no worky');
       points = 3
       score = score + points;      
       console.log(`Points for '${word[i]}': ${points}\n`);
@@ -89,6 +89,7 @@ let vowelBonusScore = function (word) {
  }
 }; 
 
+// test
 vowelBonusScore('MONEY');
 
 let scrabbleScore;
