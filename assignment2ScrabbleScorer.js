@@ -90,7 +90,7 @@ let vowelBonusScore = function (word) {
 }; 
 
 // test
-vowelBonusScore('MONEY');
+// vowelBonusScore('MONEY');
 
 let scrabbleScore;
 
