@@ -133,17 +133,22 @@ function scorerPrompt() {
    let userInput = input.question('Choose a scoring algorithm: ');
    while (userInput !== 0 || 1 || 2) {
      if (userInput === 0) {
-       return 
+       //test 
+       console.log(1); 
       
      } else if (userInput === 1) {
+       //test
+       console.log(2); 
 
      } else if (userInput === 2) {
+       //test
+       console.log(3);
 
      } else return scorerPrompt();
  }
 }
 
-scorerPrompt();
+//scorerPrompt();
 
 function transform() {};
 
