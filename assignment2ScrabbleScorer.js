@@ -139,16 +139,16 @@ function scorerPrompt() {
    while (userInput !== 0 || userInput !== 1 || userInput !== 2) {
      if (userInput === 0) {
        //test 
-       console.log(1);
+       console.log(0);
        //return scoringAlgorithms[userInput].score_function;
       
      } else if (userInput === 1) {
        //test
-       console.log(2); 
+       console.log(1); 
 
      } else if (userInput === 2) {
        //test
-       console.log(3);
+       console.log(2);
 
      } else {
       return scorerPrompt();
