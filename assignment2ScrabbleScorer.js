@@ -156,7 +156,8 @@ function scorerPrompt() {
       //break;
      }
  }
- return scoringAlgorithms[userInput];
+ //return scoringAlgorithms[userInput];
+ return userInput;
 }
 
 //test
