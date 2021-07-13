@@ -145,6 +145,7 @@ function scorerPrompt() {
      } else if (userInput === 1) {
        //test
        console.log(2); 
+       return userInput;
 
      } else if (userInput === 2) {
        //test
@@ -178,7 +179,7 @@ let newPointStructure;
 
 function runProgram() {
    initialPrompt();
-   scorerPrompt();
+   scorerPrompt(scoringAlgorithms[userInput]);
    
 }
 
