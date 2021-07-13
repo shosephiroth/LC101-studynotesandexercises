@@ -139,7 +139,8 @@ function scorerPrompt() {
    while (userInput !== 0 || userInput !== 1 || userInput !== 2) {
      if (userInput === 0) {
        //test 
-       console.log(1); 
+       console.log(1);
+       return scoringAlgorithms[userInput].score_function;
       
      } else if (userInput === 1) {
        //test
@@ -151,6 +152,7 @@ function scorerPrompt() {
 
      } else {
       return scorerPrompt();
+      //break;
      }
  }
  return scoringAlgorithms[userInput];
@@ -164,8 +166,8 @@ function scorerPrompt() {
 
 console.log("algorithm name: ", scoringAlgorithms[0].name);
 
-console.log("scoringFunction result: ", scoringAlgorithms[0].score_function)
-console.log("scoringFunction result: ", scoringAlgorithms[0].score_function("JavaScript"));
+//console.log("scoringFunction result: ", scoringAlgorithms[0].score_function)
+//console.log("scoringFunction result: ", scoringAlgorithms[0].score_function("JavaScript"));
 
 // these console logs above currently do not work and point to
 // the original array being a dictionary not an array possibly?
@@ -178,6 +180,10 @@ function runProgram() {
    initialPrompt();
    
 }
+
+// Call scorerPrompt() inside of runProgram() so that the program asks the user for a scoring algorithm after prompting for a word. Use the scoring object returned from scorerPrompt() to score the user's word and let the user know what score their word receives.
+
+runProgram(scorerPrompt());
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
