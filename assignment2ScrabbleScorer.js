@@ -50,11 +50,14 @@ function initialPrompt() {
 // 1. simpleScore: Define a function that takes a word as a parameter and returns a numerical score. Each letter within the word is worth 1 point.
 
 let simpleScore = function (word) {
-   for (let i = 0; i < word.length; i++) {
+  let i = 0;
+   for (i = 0; i < word.length; i++) {
      //test
      //console.log(i);
-     return i;
+     
    }
+
+  return i;
 };
 
 //test
@@ -126,14 +129,14 @@ oldScrabbleScorerObject = {
   score_function: oldScrabbleScorer
 };
 
-const scoringAlgorithms = [simpleScore, vowelBonusScore, oldScrabbleScorer,];
+const scoringAlgorithms = [simpleScoreObject, vowelBonusScoreObject, oldScrabbleScorerObject];
 
 // 3. Finish writing scorerPrompt() so that the user can select which scoring algorithm to use when the program scores their word. Use the selected algorithm to determine the score for the word:
 
 function scorerPrompt() {
    //test
    let userInput = input.question('Choose a scoring algorithm: ');
-   while (userInput !== 0 || 1 || 2) {
+   while (userInput !== 0 || userInput !== 1 || userInput !== 2) {
      if (userInput === 0) {
        //test 
        console.log(1); 
@@ -160,7 +163,9 @@ function scorerPrompt() {
 // tests given by the assignment:
 
 console.log("algorithm name: ", scoringAlgorithms[0].name);
-//console.log("scoringFunction result: ", scoringAlgorithms[0].scoringFunction("JavaScript"));
+
+console.log("scoringFunction result: ", scoringAlgorithms[0].score_function)
+console.log("scoringFunction result: ", scoringAlgorithms[0].score_function("JavaScript"));
 
 // these console logs above currently do not work and point to
 // the original array being a dictionary not an array possibly?
