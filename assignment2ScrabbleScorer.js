@@ -140,7 +140,7 @@ function scorerPrompt() {
      if (userInput === 0) {
        //test 
        console.log(1);
-       return scoringAlgorithms[userInput].score_function;
+       //return scoringAlgorithms[userInput].score_function;
       
      } else if (userInput === 1) {
        //test
