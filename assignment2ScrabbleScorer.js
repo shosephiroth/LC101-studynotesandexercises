@@ -178,12 +178,15 @@ let newPointStructure;
 
 function runProgram() {
    initialPrompt();
+   scorerPrompt();
    
 }
 
 // Call scorerPrompt() inside of runProgram() so that the program asks the user for a scoring algorithm after prompting for a word. Use the scoring object returned from scorerPrompt() to score the user's word and let the user know what score their word receives.
 
-runProgram(scorerPrompt());
+// this line below is wrong. They meant call it in the function like line 179 - 181 (current save state, will partially remove comment next update):
+
+// runProgram(scorerPrompt());
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
