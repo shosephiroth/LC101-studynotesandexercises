@@ -135,7 +135,7 @@ const scoringAlgorithms = [simpleScoreObject, vowelBonusScoreObject, oldScrabble
 
 function scorerPrompt() {
    //test
-   let userInput = input.question('Choose a scoring algorithm: ');
+   let userInput = Number(input.question('Choose a scoring algorithm: '));
    while (userInput !== 0 || userInput !== 1 || userInput !== 2) {
      if (userInput === 0) {
        //test 
@@ -145,7 +145,6 @@ function scorerPrompt() {
      } else if (userInput === 1) {
        //test
        console.log(2); 
-       return userInput;
 
      } else if (userInput === 2) {
        //test
@@ -156,8 +155,7 @@ function scorerPrompt() {
       //break;
      }
  }
- //return scoringAlgorithms[userInput];
- return userInput;
+ return scoringAlgorithms[userInput];
 }
 
 //test
@@ -180,7 +178,7 @@ let newPointStructure;
 
 function runProgram() {
    initialPrompt();
-   scorerPrompt(scoringAlgorithms[userInput]);
+   scorerPrompt();
    
 }
 
@@ -204,4 +202,3 @@ module.exports = {
 	runProgram: runProgram,
 	scorerPrompt: scorerPrompt
 };
-
