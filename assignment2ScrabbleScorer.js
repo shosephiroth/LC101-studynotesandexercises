@@ -40,7 +40,7 @@ function oldScrabbleScorer(word) {
 
 function initialPrompt() {
    console.log("Let's play some scrabble!");
-   candidateWord = input.question('Enter a word: ');
+   candidateWord = input.question('Enter a word to score: ');
    console.log(oldScrabbleScorer(candidateWord));
 
 };
@@ -135,12 +135,18 @@ const scoringAlgorithms = [simpleScoreObject, vowelBonusScoreObject, oldScrabble
 
 function scorerPrompt() {
    //test
-   let userInput = Number(input.question('Choose a scoring algorithm: '));
+   console.log('Choose a scoring algorithm: ')
+   console.log('');
+   console.log('0 - Simple: One point per character');
+   console.log('1 - Vowel Bonus: Vowels are worth 3 points');
+   console.log('2 - Scrabble: Uses scrabble point system');
+   console.log('');
+   let userInput = Number(input.question('Please enter: 0, 1, or 2: '));
    while (userInput !== 0 || userInput !== 1 || userInput !== 2) {
      if (userInput === 0) {
        //test 
        console.log(0);
-       //return scoringAlgorithms[userInput].score_function;
+       break;
       
      } else if (userInput === 1) {
        //test
