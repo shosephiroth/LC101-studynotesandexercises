@@ -205,9 +205,14 @@ To access a particular element within a letter array, add a second set of bracke
 
 function transform(object) {
   let newKey = {}
-  for (item in object) {
-    for (let i = 0; i < object.length; i++)
-      newKey[item] = object[1];
+  for (score in object) {
+    let letters = object[score];
+    for (let i = 0; i < letters.length; i++) {
+      // add values from old structure to keys
+      // of new structure 
+      //newkey[i][j] =  
+    }
+    
     
     
   }
