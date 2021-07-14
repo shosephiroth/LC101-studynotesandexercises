@@ -141,7 +141,13 @@ function scorerPrompt() {
    console.log('1 - Vowel Bonus: Vowels are worth 3 points');
    console.log('2 - Scrabble: Uses scrabble point system');
    console.log('');
+   
    let userInput = Number(input.question('Please enter: 0, 1, or 2: '));
+
+   // Thinking of storing the result of scoringAlgorithms[userInput] in a variable:
+
+   let userInputScoreFunction = scoringAlgorithms[userInput];
+
    while (userInput !== 0 || userInput !== 1 || userInput !== 2) {
      if (userInput === 0) {
        //test 
@@ -150,11 +156,13 @@ function scorerPrompt() {
       
      } else if (userInput === 1) {
        //test
-       console.log(1); 
+       console.log(`Score for ${candidateWord}: ${userInput}`);
+       break; 
 
      } else if (userInput === 2) {
        //test
-       console.log(2);
+       console.log(`Score for ${candidateWord}: ${userInput}`);
+       break;
 
      } else {
       return scorerPrompt();
