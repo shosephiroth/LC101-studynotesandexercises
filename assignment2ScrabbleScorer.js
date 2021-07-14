@@ -206,7 +206,7 @@ To access a particular element within a letter array, add a second set of bracke
 function transform(object) {
   let newKey = {}
   for (item in object) {
-    newKey[item] = Number((object['key']));
+    newKey[item] = (object['key']);
     //newKey[item] = (item[object]);
     //test
     //console.log(newKey);
@@ -216,7 +216,7 @@ function transform(object) {
     // let object = object[item][i];
     //console.log(`${item}  ${object[item]}`);
     for (item in newKey) {
-     newKey[object] = object[object];
+     newKey[item] = object[object];
    }
   }
   return newKey;
@@ -228,6 +228,8 @@ function transform(object) {
 let newPointStructure = transform(oldPointStructure);
 
 //test
+console.log(oldPointStructure);
+console.log();
 console.log(newPointStructure);
 
 function runProgram() {
