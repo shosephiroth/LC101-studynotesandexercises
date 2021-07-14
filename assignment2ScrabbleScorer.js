@@ -146,18 +146,19 @@ function scorerPrompt() {
 
    // Thinking of storing the result of scoringAlgorithms[userInput] in a variable:
 
-   let userInputScoreFunction = scoringAlgorithms[userInput];
+   let userInputScoreFunction;
 
    while (userInput !== 0 || userInput !== 1 || userInput !== 2) {
      if (userInput === 0) {
        //test 
-       console.log(`Score for ${candidateWord}: ${userInput}`);
-       return userInputScoreFunction
-       //break;
+       console.log(`Score for ${candidateWord}: ${userInput}`);   
+       userInputScoreFunction = scoringAlgorithms[userInput];    
+       break;
       
      } else if (userInput === 1) {
        //test
-       console.log(`Score for ${candidateWord}: ${userInput}`);
+       userInputScoreFunction = scoringAlgorithms[userInput].score_function; 
+       console.log(`Score for ${candidateWord}: ${userInputScoreFunction}`);
        break; 
 
      } else if (userInput === 2) {
@@ -194,7 +195,7 @@ let newPointStructure;
 function runProgram() {
    initialPrompt();
    scorerPrompt();
-   return userInputScoreFunction
+   
 }
 
 // Call scorerPrompt() inside of runProgram() so that the program asks the user for a scoring algorithm after prompting for a word. Use the scoring object returned from scorerPrompt() to score the user's word and let the user know what score their word receives.
