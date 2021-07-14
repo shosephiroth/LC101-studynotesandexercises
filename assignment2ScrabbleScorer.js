@@ -215,13 +215,10 @@ function transform(object) {
     //console.log(`${item}  ${object[item]}`);
     // let object = object[item][i];
     //console.log(`${item}  ${object[item]}`);
+    for (item in newKey) {
+     newKey[object] = object[object];
+   }
   }
-  //return newKey;
-
-  for (item in newKey) {
-    newKey[object] = object[item];
-  }
-
   return newKey;
 }
 
