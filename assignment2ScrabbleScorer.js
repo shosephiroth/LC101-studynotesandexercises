@@ -42,7 +42,7 @@ function initialPrompt() {
    console.log("Let's play some scrabble!");
    candidateWord = input.question('Enter a word to score: ');
    console.log(oldScrabbleScorer(candidateWord));
-
+  return candidateWord;
 };
 
 // B) Add and Organize Scoring Algorithms
@@ -130,10 +130,10 @@ oldScrabbleScorerObject = {
 };
 
 const scoringAlgorithms = [simpleScoreObject, vowelBonusScoreObject, oldScrabbleScorerObject];
-
+console.log(scoringAlgorithms[1]['score_function'])
 // 3. Finish writing scorerPrompt() so that the user can select which scoring algorithm to use when the program scores their word. Use the selected algorithm to determine the score for the word:
 
-function scorerPrompt() {
+function scorerPrompt(word) {
    //test
    console.log('Choose a scoring algorithm: ')
    console.log('');
@@ -146,33 +146,31 @@ function scorerPrompt() {
 
    // Thinking of storing the result of scoringAlgorithms[userInput] in a variable:
 
-   let userInputScoreFunction;
+  //  let userInputScoreFunction;
 
-   while (userInput !== 0 || userInput !== 1 || userInput !== 2) {
-     if (userInput === 0) {
+  //  while (userInput !== 0 || userInput !== 1 || userInput !== 2) {
+  if (userInput === 0) {
        //test 
-       console.log(`Score for ${candidateWord}: ${userInput}`);   
-       userInputScoreFunction = scoringAlgorithms[userInput];    
-       break;
-      
+    let userInputScoreFunction = scoringAlgorithms[userInput]['score_function'];
+    let score = userInputScoreFunction(word)
+    console.log(`Score for ${candidateWord}: ${userInputScoreFunction}`);   
+       
+     
      } else if (userInput === 1) {
        //test
        userInputScoreFunction = scoringAlgorithms[userInput].score_function; 
        console.log(`Score for ${candidateWord}: `);
-       //return userInputScoreFunction;
-       break; 
+       return userInputScoreFunction;
 
      } else if (userInput === 2) {
        //test
        console.log(`Score for ${candidateWord}: ${userInput}`);
-       break;
 
      } else {
       return scorerPrompt();
-      //break;
      }
- }
- return userInputScoreFunction;
+//  }
+ return score;
 }
 
 //test
@@ -194,8 +192,8 @@ function transform() {};
 let newPointStructure;
 
 function runProgram() {
-   initialPrompt();
-   scorerPrompt();
+   let word = initialPrompt();
+   scorerPrompt(word);
    
 }
 
