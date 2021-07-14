@@ -145,7 +145,7 @@ function scorerPrompt() {
    while (userInput !== 0 || userInput !== 1 || userInput !== 2) {
      if (userInput === 0) {
        //test 
-       console.log(0);
+       console.log(`Score for ${candidateWord}: ${userInput}`);
        break;
       
      } else if (userInput === 1) {
