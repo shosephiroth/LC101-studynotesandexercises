@@ -204,9 +204,15 @@ To access the letter arrays within oldPointStructure, use bracket notation (oldP
 To access a particular element within a letter array, add a second set of brackets (oldPointStructure['key'][index]), or assign the array to a variable and use variableName[index]. */
 
 function transform(object) {
+  let newKey = {}
   for (item in object) {
+    newKey[item] = this.object[item];
+    console.log(newKey);
+    
     //test
-     console.log(`${item}  ${object[item]}`);
+    //console.log(`${item}  ${object[item]}`);
+    // let object = object[item][i];
+    //console.log(`${item}  ${object[item]}`);
   }
 
 }
