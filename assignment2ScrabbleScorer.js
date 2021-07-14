@@ -40,6 +40,7 @@ function oldScrabbleScorer(word) {
 
 function initialPrompt() {
    console.log("Let's play some scrabble!");
+   console.log();
    candidateWord = input.question('Enter a word to score: ');
    //console.log(oldScrabbleScorer(candidateWord));
 
@@ -181,7 +182,7 @@ function scorerPrompt() {
 
 // tests given by the assignment:
 
-console.log("algorithm name: ", scoringAlgorithms[0].name);
+//console.log("algorithm name: ", scoringAlgorithms[0].name);
 
 //console.log("scoringFunction result: ", scoringAlgorithms[0].score_function)
 //console.log("scoringFunction result: ", scoringAlgorithms[0].score_function("JavaScript"));
