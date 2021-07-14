@@ -207,17 +207,7 @@ function transform(object) {
   let newKey = {}
   for (item in object) {
     newKey[item] = (object['key']);
-    //newKey[item] = (item[object]);
-    //test
-    //console.log(newKey);
     
-    //test
-    //console.log(`${item}  ${object[item]}`);
-    // let object = object[item][i];
-    //console.log(`${item}  ${object[item]}`);
-    for (item in newKey) {
-     newKey[item] = object[object];
-   }
   }
   return newKey;
 }
