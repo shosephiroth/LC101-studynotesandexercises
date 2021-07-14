@@ -156,11 +156,10 @@ function scorerPrompt() {
        return userInputScoreFunction;
       
      } else if (userInput === 1) {
-       //test
-       userInputScoreFunction = scoringAlgorithms[userInput].score_function; 
-       console.log(`Score for ${candidateWord}: `);
-       return userInputScoreFunction;
-       //break; 
+        userInputScoreFunction = scoringAlgorithms[userInput].score_function(candidateWord); 
+        //test 
+        console.log(`Score for ${candidateWord}: ` + userInputScoreFunction);       
+        return userInputScoreFunction; 
 
      } else if (userInput === 2) {
        //test
