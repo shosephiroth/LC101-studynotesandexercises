@@ -150,17 +150,17 @@ function scorerPrompt() {
 
    while (userInput !== 0 || userInput !== 1 || userInput !== 2) {
      if (userInput === 0) {
+       userInputScoreFunction = scoringAlgorithms[userInput].score_function(candidateWord); 
        //test 
-       console.log(`Score for ${candidateWord}: ${userInput}`);   
-       userInputScoreFunction = scoringAlgorithms[userInput].score_function(candidateWord);    
-       break;
+       console.log(`Score for ${candidateWord}: ` + userInputScoreFunction);       
+       return userInputScoreFunction;
       
      } else if (userInput === 1) {
        //test
        userInputScoreFunction = scoringAlgorithms[userInput].score_function; 
        console.log(`Score for ${candidateWord}: `);
-       //return userInputScoreFunction;
-       break; 
+       return userInputScoreFunction;
+       //break; 
 
      } else if (userInput === 2) {
        //test
@@ -172,7 +172,7 @@ function scorerPrompt() {
       //break;
      }
  }
- return userInputScoreFunction;
+ //return userInputScoreFunction;
 }
 
 //test
