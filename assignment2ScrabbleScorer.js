@@ -210,7 +210,7 @@ function transform(object) {
     for (let i = 0; i < letters.length; i++) {
       // add values from old structure to keys
       // of new structure 
-      newKey[letters[i]] = letters[i]; 
+      newKey[letters[i]] = score[i]; 
     }
     
     
