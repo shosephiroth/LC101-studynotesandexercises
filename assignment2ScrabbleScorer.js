@@ -152,7 +152,8 @@ function scorerPrompt() {
      if (userInput === 0) {
        //test 
        console.log(`Score for ${candidateWord}: ${userInput}`);
-       break;
+       return userInputScoreFunction
+       //break;
       
      } else if (userInput === 1) {
        //test
@@ -169,7 +170,7 @@ function scorerPrompt() {
       //break;
      }
  }
- return scoringAlgorithms[userInput];
+ return userInputScoreFunction;
 }
 
 //test
@@ -193,7 +194,7 @@ let newPointStructure;
 function runProgram() {
    initialPrompt();
    scorerPrompt();
-   
+   return userInputScoreFunction
 }
 
 // Call scorerPrompt() inside of runProgram() so that the program asks the user for a scoring algorithm after prompting for a word. Use the scoring object returned from scorerPrompt() to score the user's word and let the user know what score their word receives.
