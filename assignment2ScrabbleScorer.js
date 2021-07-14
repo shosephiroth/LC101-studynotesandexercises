@@ -206,15 +206,16 @@ To access a particular element within a letter array, add a second set of bracke
 function transform(object) {
   let newKey = {}
   for (item in object) {
-    newKey[object] = (object['key']);
-    console.log(newKey);
+    newKey[item] = (object['key']);
+    //test
+    //console.log(newKey);
     
     //test
     //console.log(`${item}  ${object[item]}`);
     // let object = object[item][i];
     //console.log(`${item}  ${object[item]}`);
   }
-  return newKey
+  return newKey;
 }
 
 
