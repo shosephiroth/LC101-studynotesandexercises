@@ -159,7 +159,7 @@ function scorerPrompt() {
        //test
        userInputScoreFunction = scoringAlgorithms[userInput].score_function; 
        console.log(`Score for ${candidateWord}: `);
-       console.log(userInputScoreFunction);
+       //return userInputScoreFunction;
        break; 
 
      } else if (userInput === 2) {
