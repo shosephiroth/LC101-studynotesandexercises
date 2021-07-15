@@ -245,9 +245,9 @@ newPointStructure[' '] = 0;
 
 //test
 //console.log(oldPointStructure);
-console.log();
-console.log(newPointStructure);
-console.log();
+//console.log();
+//console.log(newPointStructure);
+//console.log();
 
 function runProgram() {
    initialPrompt();
