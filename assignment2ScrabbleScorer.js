@@ -98,15 +98,19 @@ let vowelBonusScore = function (word) {
 // test
 // vowelBonusScore('MONEY');
 
-let scrabbleScore; //= function(word) {
-  // initialize a total variable to 0
-  // go through each latter in the word
+let scrabbleScore = function(word) {
+  // initialize a total variable to 0  
+  // go through each letter in the word
   // use newPointStructure to get the score 
   // point = newPointStructure[letter]
   //return total
+  for (let i = 0; i > word.length; i++) {
+     let total = total + newPointStructure(word);
+  } 
 
+  return total;
 
-//};
+};
 
 /* Once you've written these scoring functions, organize all three of the scoring options into an array. Your program will use the scoringAlgorithms array to retrieve information about the three scoring algorithms and convey that information to the user. */
 
