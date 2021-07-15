@@ -101,6 +101,7 @@ let vowelBonusScore = function (word) {
 // 3. Once you've defined newPointStructure, use it to finish writing the scrabbleScore() function and then replace the oldScrabbleScorer() function in scoringAlgorithms with this new function. 
 
 let scrabbleScore = function (word) {
+  word = word.toLowerCase();
   // initialize a total variable to 0  
   // go through each letter in the word
   // use newPointStructure to get the score 
