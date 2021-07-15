@@ -98,6 +98,8 @@ let vowelBonusScore = function (word) {
 // test
 // vowelBonusScore('MONEY');
 
+// 3. Once you've defined newPointStructure, use it to finish writing the scrabbleScore() function and then replace the oldScrabbleScorer() function in scoringAlgorithms with this new function. 
+
 let scrabbleScore = function(word) {
   // initialize a total variable to 0  
   // go through each letter in the word
@@ -136,13 +138,13 @@ vowelBonusScoreObject = {
   score_function: vowelBonusScore
 };
 
-oldScrabbleScorerObject = {
+scrabbleScore = {
   name: "Scrabble",
   description: "The traditional scoring algorithm.",
-  score_function: oldScrabbleScorer
+  score_function: scrabbleScore
 };
 
-const scoringAlgorithms = [simpleScoreObject, vowelBonusScoreObject, oldScrabbleScorerObject];
+const scoringAlgorithms = [simpleScoreObject, vowelBonusScoreObject, scrabbleScore];
 
 // 3. Finish writing scorerPrompt() so that the user can select which scoring algorithm to use when the program scores their word. Use the selected algorithm to determine the score for the word:
 
