@@ -240,6 +240,7 @@ function transform(object) {
 
 //come back to this if moving it doesn't work
 let newPointStructure = transform(oldPointStructure);
+newPointStructure[' '] = 0;
 
 //test
 //console.log(oldPointStructure);
