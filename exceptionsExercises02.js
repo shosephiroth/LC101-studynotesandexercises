@@ -5,7 +5,7 @@ function gradeLabs(labs) {
     try {
       console.log(`${lab.student} code worked: ${result === 27}`);
     } catch(err) {
-      console.log("Error thrown");
+      console.log(`${lab.student} code worked: ${result === 'Error thrown'}`);
     }
 }
 
