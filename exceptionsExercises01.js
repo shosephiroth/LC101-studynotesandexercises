@@ -8,11 +8,16 @@
 
 function divide (numerator, denominator) {
   let result = numerator / denominator;
+
+  if (denominator = 0) {
+    throw Error("You can't divide by 0!")
+  }
+
   return result;
 }
 
 //test divide function
 
-divide(2,4);
+divide(2,0);
 
 
