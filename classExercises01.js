@@ -1,10 +1,21 @@
 // Define your Book class here:
 
 class book {
-  constructor() { //params in parenthesis
-    // asssign properties
+  constructor(title, author, copyrightDate, iSBN, numOfPages, timesCheckedOut, discardedYN) {
+    this.title = title;
+    this.author = author;
+    this.copyrightDate = copyrightDate;
+    this.iSBN = iSBN;
+    this.numOfPages = numOfPages;
+    this.timesCheckedOut = timesCheckedOut;
+    this.discardedYN = discardedYN;
+    
   }
   //define methods
+  checkOutBook(timesCheckedOut) {
+    this.timesCheckedOut += 1;
+    return this.timesCheckedOut;
+  }
 }
 
 
