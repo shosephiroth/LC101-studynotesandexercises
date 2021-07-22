@@ -1,5 +1,12 @@
 // Define your Book class here:
 
+class book {
+  constructor() { //params in parenthesis
+    // asssign properties
+  }
+  //define methods
+}
+
 
 // Define your Manual and Novel classes here:
 
