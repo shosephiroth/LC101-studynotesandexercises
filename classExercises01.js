@@ -1,14 +1,14 @@
 // Define your Book class here:
 
 class book {
-  constructor(title, author, copyrightDate, iSBN, numOfPages, timesCheckedOut, discardedYN) {
+  constructor(title, author, copyrightDate, iSBN, numOfPages, timesCheckedOut, checkOutLimit, discardedYN) {
     this.title = title;
     this.author = author;
     this.copyrightDate = copyrightDate;
     this.iSBN = iSBN;
     this.numOfPages = numOfPages;
     this.timesCheckedOut = timesCheckedOut;
-    this.checkOutLimit = checkOutLimit
+    this.checkOutLimit = checkOutLimit;
     this.discardedYN = discardedYN;
     
   }
