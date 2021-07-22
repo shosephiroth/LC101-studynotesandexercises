@@ -10,12 +10,17 @@ class book {
     this.timesCheckedOut = timesCheckedOut;
     this.checkOutLimit = checkOutLimit;
     this.discardedYN = discardedYN;
+    // 'One will be a constructor' Is this what's meant by that?
+    this.checkOutBook = function(){
+      this.timesCheckedOut += 1;
+      return this.timesCheckedOut;      
+    }
     
   }
   //define methods
-  checkOutBook() {
-    this.timesCheckedOut += 1;
-    return this.timesCheckedOut;
+  //checkOutBook() {
+    //this.timesCheckedOut += 1;
+    //return this.timesCheckedOut;
   }
   shouldBeDiscarded() {
     if (this.timesCheckedOut > this.checkOutLimit) {
