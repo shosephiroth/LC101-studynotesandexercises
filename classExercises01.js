@@ -13,11 +13,11 @@ class book {
     
   }
   //define methods
-  checkOutBook(timesCheckedOut) {
+  checkOutBook() {
     this.timesCheckedOut += 1;
     return this.timesCheckedOut;
   }
-  shouldBeDiscarded(timesCheckedOut) {
+  shouldBeDiscarded() {
     if (this.timesCheckedOut > this.checkOutLimit) {
       this.discardedYN = true;
       return this.discardedYN;
