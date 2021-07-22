@@ -8,6 +8,7 @@ class book {
     this.iSBN = iSBN;
     this.numOfPages = numOfPages;
     this.timesCheckedOut = timesCheckedOut;
+    this.checkOutLimit = checkOutLimit
     this.discardedYN = discardedYN;
     
   }
@@ -15,6 +16,12 @@ class book {
   checkOutBook(timesCheckedOut) {
     this.timesCheckedOut += 1;
     return this.timesCheckedOut;
+  }
+  shouldBeDiscarded(timesCheckedOut) {
+    if (this.timesCheckedOut > this.checkOutLimit) {
+      this.discardedYN = true;
+      return this.discardedYN;
+    }
   }
 }
 
