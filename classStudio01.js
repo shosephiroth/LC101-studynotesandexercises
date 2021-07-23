@@ -18,7 +18,7 @@ class CrewCandidate {
       return candidateStatus;
       }
       else if(myAverage <= 79  && myAverage >= 70){
-        let candidateStatus = "probationary";
+        let candidateStatus = "Probationary";
         return candidateStatus;
 
   
@@ -27,7 +27,7 @@ class CrewCandidate {
         return candidateStatus;
       }
     }
-    
+    statusStatement = `${this.name} has earned an average test score of ${this.averageScore} and has a status of ${this.candidateStatus}`;
   }
 
 
@@ -62,6 +62,7 @@ console.log(bubba);
 console.log(merry); 
 console.log(glad); 
 console.log(bubba.status());
+
 
 
 //Add methods for adding scores, averaging scores and determining candidate status as described in the studio activity.
