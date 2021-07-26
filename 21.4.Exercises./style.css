@@ -43,7 +43,16 @@ Check your solution. */
 /*
 6. Change the font color of elements with the id, cool-text, to blue.
 
+
 7. Use a CSS id to change the elements in the ordered list to a color of your choosing.
 
 Check your solution. 
 */
+
+#cool-text {
+  color: blue;
+}
+
+#orderlist {
+  color: red;
+}
