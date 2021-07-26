@@ -10,7 +10,7 @@ Check your solution. */
 
 body {
   background-color: yellow;
-  text-align: center;
+  
 }
 
 
@@ -36,7 +36,7 @@ h1 {
 
 Check your solution. */
 
-.h1 {
+.heading {
   text-align: center;
 }
 
